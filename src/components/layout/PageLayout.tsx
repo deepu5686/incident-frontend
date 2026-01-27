@@ -1,6 +1,6 @@
-import { Box, Breadcrumbs, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { Link, Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
 import type { ReactNode } from 'react';
 
 interface PageLayoutProps {
@@ -8,11 +8,6 @@ interface PageLayoutProps {
   backTo?: string;
   actions?: ReactNode;
   children: ReactNode;
-}
-
-function handleClick(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
-  event.preventDefault();
-  console.info('You clicked a breadcrumb.');
 }
 
 export function PageLayout({

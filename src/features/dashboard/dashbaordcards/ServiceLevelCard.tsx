@@ -71,7 +71,7 @@ export const ServiceLevelCard = () => {
 
   const totalIssues = data?.length;
   const closedIssues = data?.filter((res: any) => res.status === 'CLOSED').length;
-  const progressValue = Math.round((closedIssues / totalIssues) * 100);
+  const progressValue = Math.round((closedIssues! / totalIssues!) * 100);
 
   const getProgressColor = (): string => {
     if (progressValue <= 15) return '#d32f2f';

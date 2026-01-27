@@ -1,4 +1,4 @@
-import { Box, FormControlLabel, FormGroup, Typography } from "@mui/material";
+import { Box, FormControlLabel, FormGroup } from "@mui/material";
 import Switch from '@mui/material/Switch';
 import { styled } from '@mui/material/styles';
 import { useThemeMode } from "../../theme/CustomThemeProvider";
